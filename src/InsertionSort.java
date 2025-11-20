@@ -7,6 +7,10 @@ public class InsertionSort {
         // 1. Buat array yang berisi bilangan tidak berurutan
         int arr[] = {15, 6, 24, 96};
 
+        for(int x = 0; x < arr.length; x++){
+            System.out.println("Array sebelum diurut: " + arr[x] + " ");
+        }
+
         // 2. Buat looping(perulangan) untuk mengambil elemen array dari index ke-1 sampai akhir
         for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
@@ -20,6 +24,7 @@ public class InsertionSort {
         }
        
         //Buat looping untuk menampilkan elemen array yang sudah diurut
+        System.out.print("Array setelah diurut: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }
